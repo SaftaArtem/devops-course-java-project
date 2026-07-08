@@ -13,15 +13,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <playwright_version>1.59.0</playwright_version>
-
-        <properties>
-            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-            <playwright_version>1.59.0</playwright_version>
-
-            <sonar.coverage.jacoco.xmlReportPaths>
-                ${project.basedir}/target/site/jacoco/jacoco.xml
-            </sonar.coverage.jacoco.xmlReportPaths>
-        </properties>
+        <sonar.coverage.jacoco.xmlReportPaths>
+            ${project.basedir}/target/site/jacoco/jacoco.xml
+        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <dependencies>
