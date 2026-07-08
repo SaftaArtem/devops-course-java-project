@@ -10,7 +10,12 @@ public class App
         return "Hello World!";
     }
 
+    public static String getVersion() {
+        return "1.0.0";
+    }
+
     public static void main(String[] args) {
         System.out.println(getMessage());
+        System.out.println(getVersion());
     }
 }
