@@ -12,6 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>21</maven.compiler.release>
         <playwright_version>1.59.0</playwright_version>
         <sonar.coverage.jacoco.xmlReportPaths>
             ${project.basedir}/target/site/jacoco/jacoco.xml
@@ -19,10 +20,16 @@
     </properties>
     <distributionManagement>
         <repository>
-            <id>artifactory</id>
-            <name>JFrog Artifactory</name>
-            <url>http://localhost:8082/artifactory/jeinkinsTestpipeline</url>
+            <id>github</id>
+            <name>GitHub Packages Releases</name>
+            <url>https://maven.pkg.github.com/saftaartem/devops-course-java-project</url>
         </repository>
+
+        <snapshotRepository>
+            <id>github</id>
+            <name>GitHub Packages Snapshots</name>
+            <url>https://maven.pkg.github.com/saftaartem/devops-course-java-project</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
