@@ -1,0 +1,9 @@
+name: Variables Demo
+on:
+  workflow_dispatch:
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print variable
+        run: echo "Environment is ${{ vars.ENV }}"
