@@ -1,4 +1,4 @@
-name: Manual trigger Workflow
+name: Cron  Workflow
 on:
   schedule:
     - cron: '*/1 * * * *'
@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print message
-        run: echo "Hello Manual"
+        run: echo "Cron Manual"
       - name: Print date
         run: date
