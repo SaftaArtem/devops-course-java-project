@@ -1,14 +1,12 @@
-name: Maven Test
+name: Manual trigger Workflow
 on:
-  push:
+  workflow_dispatch:
+
 jobs:
-  test:
+  hello:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 21
-      - name: Run tests
-        run: mvn test
+      - name: Print message
+        run: echo "Hello Manual"
+      - name: Print date
+        run: date
